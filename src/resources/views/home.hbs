@@ -1,0 +1,28 @@
+<div class="container mt-5">
+  <h1>khóa học lập trình</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aspernatur
+    ab quis distinctio quisquam laborum ratione ipsum dolorum. Vero neque, harum
+    vitae explicabo nobis cumque nihil ut. Architecto, exercitationem eligendi!</p>
+
+  <form method="get" action="/login" class="col text-center">
+    <input type="submit" class="btn btn-primary" value="Login" />
+  </form>
+
+  <div class="row mt-5 mb-5">
+    {{#each documents}}
+      <div class="col-lg-3">
+        <div class="card">
+          <a href="/courses/{{this.slug}}">
+            <img src="{{this.image}}" class="card-img-top" alt="..." />
+          </a>
+          <div class="card-body">
+            <a class="text-decoration-none" href="/courses/{{this.slug}}">
+              <h5 class="card-title">{{this.name}}</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+</div>

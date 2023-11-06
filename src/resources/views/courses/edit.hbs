@@ -1,0 +1,61 @@
+<form
+  class="mt-5 container-sm"
+  method="POST"
+  action="/courses/{{id}}?_method=PUT"
+>
+  <h3 class="">
+    Update course
+  </h3>
+
+  <div class="mb-3">
+    <label class="form-label">
+      Name course
+    </label>
+    <input
+      type="text"
+      class="form-control"
+      name="name"
+      value="{{course.name}}"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">
+      Image
+    </label>
+    <input
+      type="text"
+      class="form-control"
+      name="image"
+      value="{{course.image}}"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">
+      Description
+    </label>
+    <textarea
+      class="form-control"
+      name="scription"
+      id=""
+      rows="7"
+    >{{course.scription}}</textarea>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">
+      link youtube
+    </label>
+    <input
+      type="text"
+      class="form-control"
+      name="srcYoutube"
+      value="{{course.srcYoutube}}"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary mb-5">
+    Submit
+  </button>
+</form>
